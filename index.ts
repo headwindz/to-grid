@@ -21,8 +21,4 @@ function toGrid<T>(arr: T[], numOfColumns: number, layout: Layout = Layout.Z): T
   return result;
 }
 
-
-console.log(toGrid([1,2,3,4,5,6,7], 3, Layout.N))
-console.log(toGrid([1,2,3,4,5,6,7], 3, Layout.Z))
-console.log(toGrid([1,2,3,4,5,6,7], 1, Layout.N))
-console.log(toGrid([1,2,3,4,5,6,7], 1, Layout.Z))
+export default toGrid;

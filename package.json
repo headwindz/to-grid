@@ -1,15 +1,28 @@
 {
   "name": "to-grid",
   "version": "1.0.0",
-  "description": "to grid",
-  "main": "index.ts",
+  "description": "generate an array of elements split into groups in specified layout",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && tsc",
+    "test": "mocha --reporter spec"
   },
   "keywords": [
-    "to",
-    "grid"
+    "to grid",
+    "N",
+    "Z",
+    "chunk"
   ],
   "author": "n0ruSh",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:n0ruSh/to-grid.git"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.2",
+    "typescript": "^3.4.2"
+  }
 }
