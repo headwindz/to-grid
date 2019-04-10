@@ -1,14 +1,18 @@
-export enum Layout {
+export enum Order {
   N,
   Z
 }
 
-function toGrid<T>(arr: T[], numOfColumns: number, layout: Layout = Layout.Z): T[][] {
+function toGrid<T>(
+  arr: T[],
+  numOfColumns: number,
+  layout: Order = Order.Z
+): T[][] {
   let result = [] as T[][];
-  const numOfRows = Math.ceil(arr.length / numOfColumns)
-  arr.forEach((it, index ) => {
+  const numOfRows = Math.ceil(arr.length / numOfColumns);
+  arr.forEach((it, index) => {
     let rowIndex, columnIndex;
-    if (layout === Layout.Z) {
+    if (layout === Order.Z) {
       rowIndex = Math.floor(index / numOfColumns);
       columnIndex = index % numOfColumns;
     } else {
@@ -17,7 +21,7 @@ function toGrid<T>(arr: T[], numOfColumns: number, layout: Layout = Layout.Z): T
     }
     result[rowIndex] = result[rowIndex] || [];
     result[rowIndex][columnIndex] = it;
-  })
+  });
   return result;
 }
 
