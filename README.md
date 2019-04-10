@@ -42,9 +42,7 @@ i.e.
 
 # N Ordering
 
-> top to bottom -> left to right
-
-> left-to-right, top-to-bottom
+> top-to-bottom -> left-to-right
 
 E.g. 
 
