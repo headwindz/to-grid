@@ -7,7 +7,7 @@ npm i --save to-grid
 ```
 
 ```
-let { Order, default: toGrid} = require('omit.js');
+let { Order, default: toGrid} = require('to-grid');
 toGrid([1,2,3,4,5,6,7], 3, Order.N);
 ```
 
